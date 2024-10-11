@@ -1,7 +1,9 @@
 body {
     margin: 0; /* Sin margen alrededor */
     padding: 0; /* Sin padding alrededor */
-    background-color: #ef8f7b; /* Color de fondo */
+    background-image: url("./img/rosa.webp"); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
     display: flex; /* Usar flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
