@@ -1,7 +1,7 @@
 body {
     margin: 0; /* Sin margen alrededor */
     padding: 0; /* Sin padding alrededor */
-    background-image: url("./img/rosa.webp"); /* Imagen de fondo */
+    background-image: url("./img/rosas.avif"); /* Imagen de fondo */
     background-size: cover; /* Cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     display: flex; /* Usar flexbox */
