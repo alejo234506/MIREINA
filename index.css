@@ -1,0 +1,115 @@
+body {
+    margin: 0; /* Sin margen alrededor */
+    padding: 0; /* Sin padding alrededor */
+    background-color: #ef8f7b; /* Color de fondo */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura total de la ventana */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca el título y el libro en columna */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+}
+
+ul {
+    color: white; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Fuente */
+    font-size: 24px; /* Tamaño de la fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin: 0; /* Sin margen adicional */
+    margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+.cover {
+    width: 80%; /* Ancho del contenedor */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    margin-top: 10px; /* Espacio entre el título y las imágenes */
+}
+
+.book {
+    display: flex; /* Usar flexbox para las imágenes */
+    flex-direction: row; /* Coloca las páginas en fila */
+}
+
+.page {
+    display: none; /* Ocultar todas las páginas por defecto */
+    width: 50%; /* Cada página ocupa la mitad del contenedor */
+}
+
+.page.active {
+    display: block; /* Solo las páginas activas son visibles */
+}
+
+img {
+    width: 70%; /* Mantiene el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+}
+
+video {
+    width: 70%; /* Mantiene el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de los videos */
+    border-radius: 10px; /* Añade bordes redondeados a los videos */
+}
+
+.images-module,
+.videos-module {
+    display: flex;
+    flex-direction: column; /* Para que cada página esté en una columna */
+    align-items: center; /* Centra las imágenes y videos */
+    width: 100%; /* Asegura que el módulo ocupe todo el ancho */
+}
+
+button {
+    margin-top: 20px; /* Espacio superior para el botón */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #ff8c94; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+button:hover {
+    background-color: #ff6f74; /* Color de fondo al pasar el mouse */
+}
+.card {
+    position: fixed; /* Fija la tarjeta en la pantalla */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+    background-color: white; /* Color de fondo de la tarjeta */
+    border: 2px solid #333; /* Borde de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    display: none; /* Oculta la tarjeta inicialmente */
+ }
+  
+.card h2 {
+    margin: 0; /* Sin margen */
+  }
+  
+.card p {
+    margin: 10px 0; /* Espaciado entre párrafos */
+  }
+  
+.card button {
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
